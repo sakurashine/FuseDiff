@@ -1,4 +1,4 @@
-# FuseDiff (UAV Shadow Removal)
+# FuseDiff
 
 This is the official implementation of the paper **"Fusion and Diffusion for Timestep-Aware UAV Shadow Removal"**.
 

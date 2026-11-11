@@ -57,7 +57,7 @@ Please download the pretrained FuseDiff model and place it in the designated che
 To perform shadow removal using the pretrained model, run:
 
 ```bash
-python tools/crop_tiles.py --images [PATH_OF_SHADOWED_IMAGES] --masks [PATH_OF_MASK] --gt [PATH_OF_SHADOWFREE_IMAGES] --output shadow_removal/data/UAV-SC/test/tiles --tile-size 1024 --overlap 128
+python tools/crop_tiles.py --images [PATH_OF_SHADOWED_IMAGES] --masks [PATH_OF_MASK] --gt [PATH_OF_SHADOWFREE_IMAGES] --output shadow_removal/data/UAV-SC/test/tiles
 
 python shadow_removal/data/data_list.py
 

@@ -57,11 +57,6 @@ Please download the pretrained FuseDiff model and place it in the designated che
 To perform shadow removal using the pretrained model, run:
 
 ```bash
-python <INFERENCE_SCRIPT>.py <REQUIRED_ARGUMENTS>
+bash run_test.sh
 ```
 
-Replace the placeholders with the inference script and arguments provided in the released code.
-
-The default inference configuration employs eight deterministic DDIM sampling steps with $\eta=0$.
-
-The restored shadow-free images will be saved to the specified output directory.

@@ -57,6 +57,7 @@ Please download the pretrained FuseDiff model and place it in the designated che
 To perform shadow removal using the pretrained model, run:
 
 ```bash
-bash run_test.sh
+cd shadow_removal/ 
+python test.py --config "config_UAV-SC_tiles.yml"
 ```
 

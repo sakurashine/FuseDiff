@@ -10,9 +10,11 @@ This is the official implementation of the paper **"Fusion and Diffusion for Tim
 
 ## Overview
 
-Shadow removal in uncrewed aerial vehicle (UAV) imagery remains challenging due to complex illumination variations and fine-grained scene textures. Existing methods often struggle to balance global illumination correction and local texture restoration.
+Shadow removal in uncrewed aerial vehicle (UAV) imagery faces two key challenges:
 
-To address these challenges, we propose **FuseDiff**, a timestep-aware framework for UAV shadow removal that combines feature fusion with conditional diffusion refinement.
+- **Lack of explicit coarse-to-fine restoration modeling:** Existing methods often lack explicit control over the progressive transition from global illumination correction to fine-grained texture recovery.
+
+- **Lack of unified stage-wise coordination:** Restoration stages are often processed independently, without a unified mechanism to coordinate illumination correction and texture refinement throughout the restoration process.
 
 FuseDiff consists of three key components:
 

@@ -65,13 +65,3 @@ Replace the placeholders with the inference script and arguments provided in the
 The default inference configuration employs eight deterministic DDIM sampling steps with $\eta=0$.
 
 The restored shadow-free images will be saved to the specified output directory.
-
-## Results
-
-Qualitative restoration examples and additional experimental results will be provided here.
-
-## Citation
-
-If you find FuseDiff useful in your research, please consider citing our paper.
-
-*BibTeX citation will be added upon publication.*

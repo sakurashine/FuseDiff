@@ -44,7 +44,7 @@ The datasets used in our experiments are provided below.
 - SRGTA: [RMMamba](https://github.com/xgd-cj/RMMamba)
 - RS-SynShadow: [RS-GSSR](https://fzzfrs.github.io/RS-GSSR/#resources)
 
-You may also evaluate FuseDiff on your own UAV images. The current framework requires corresponding shadow masks as input.
+The current framework requires corresponding shadow masks as input.
 
 ## Pretrained Models
 

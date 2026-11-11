@@ -44,13 +44,13 @@ The datasets used in our experiments are provided below.
 - SRGTA: [RMMamba](https://github.com/xgd-cj/RMMamba)
 - RS-SynShadow: [RS-GSSR](https://fzzfrs.github.io/RS-GSSR/#resources)
 
-The current framework requires corresponding shadow masks as input.
+The current framework requires corresponding shadow masks as input. The current framework requires corresponding shadow masks as input. Since the UAV-SC dataset does not provide official shadow masks, we release the test masks used in our experiments to facilitate reproducibility. These masks are available [here](https://drive.google.com/file/d/1KvzqoG8hsHTMWubPm4QgXKWhVBMz_bYX/view?usp=drive_link).
 
 ## Pretrained Models
 
 Please download the pretrained FuseDiff model and place it in the designated checkpoint directory.
 
-- **FuseDiff:** [Download link to be added]
+- **FuseDiff:** [Pretrained Model](https://drive.google.com/file/d/1b2i2vOQOqs9Kotvc4-oR9rySnx-bsae9/view?usp=drive_link)
 
 ## Inference
 

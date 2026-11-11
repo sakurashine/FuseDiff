@@ -21,7 +21,7 @@ FuseDiff consists of two key components:
 
 The framework also incorporates self-supervised inpainting pretraining to reduce its dependence on paired training data.
 
-![FuseDiff_framework](./FuseDiff_framework.pdf "FuseDiff_framework")
+
 
 ## Requirements
 

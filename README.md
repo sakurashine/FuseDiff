@@ -2,7 +2,11 @@
 
 This is the official implementation of the paper **"Fusion then Diffusion for Timestep-Aware Semi-Supervised UAV Shadow Removal"**.
 
-**Note:** This repository currently provides inference code and pretrained models. Training code is not included in the current release.
+## TODO
+
+- [x] Release inference code.
+- [x] Release pretrained models.
+- [ ] Release training code.
 
 ## Overview
 

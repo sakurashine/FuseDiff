@@ -6,21 +6,21 @@ DEBUG: 0            # turns on debugging mode
 VERBOSE: 0          # turns on verbose mode in the output console
 
 # train
-TRAIN_SHADOW_FLIST: ../data/UAV-SC/train_shaded.txt
-TRAIN_MASK_FLIST: ../data/UAV-SC/train_mask.txt
-TRAIN_GT_FLIST: ../data/UAV-SC/train_unshaded.txt
+TRAIN_SHADOW_FLIST: ./shadow_removal/data/UAV-SC/train_shaded.txt
+TRAIN_MASK_FLIST: ./shadow_removal/data/UAV-SC/train_mask.txt
+TRAIN_GT_FLIST: ./shadow_removal/data/UAV-SC/train_unshaded.txt
 
 # test
-TEST_SHADOW_FLIST: ../data/test_tiles_shaded.txt
-TEST_MASK_FLIST: ../data/test_tiles_mask.txt
-TEST_MASK2_FLIST: ../data/test_tiles_mask.txt
-TEST_GT_FLIST: ../data/test_tiles_unshaded.txt
+TEST_SHADOW_FLIST: ./shadow_removal/data/test_tiles_shaded.txt
+TEST_MASK_FLIST: ./shadow_removal/data/test_tiles_mask.txt
+TEST_MASK2_FLIST: ./shadow_removal/data/test_tiles_mask.txt
+TEST_GT_FLIST: ./shadow_removal/data/test_tiles_unshaded.txt
 
 # val
-VAL_SHADOW_FLIST: ../data/test_tiles_shaded.txt
-VAL_MASK_FLIST: ../data/test_tiles_mask.txt
-VAL_MASK2_FLIST: ../data/test_tiles_mask.txt
-VAL_GT_FLIST: ../data/test_tiles_unshaded.txt
+VAL_SHADOW_FLIST: ./shadow_removal/data/test_tiles_shaded.txt
+VAL_MASK_FLIST: ./shadow_removal/data/test_tiles_mask.txt
+VAL_MASK2_FLIST: ./shadow_removal/data/test_tiles_mask.txt
+VAL_GT_FLIST: ./shadow_removal/data/test_tiles_unshaded.txt
 
 
 LR: 0.00005                   # learning rate
@@ -63,12 +63,12 @@ TRAIN_SAMPLE_INTERVAL: 1000
 EVAL_SAMPLE_INTERVAL: 20
 
 
-TRAIN_SAMPLE_SAVE: ../result/UAV-SC/train
-EVAL_SAMPLE_SAVE: ../result/UAV-SC/eval
-TEST_SAMPLE_SAVE: ../result/UAV-SC/test
+TRAIN_SAMPLE_SAVE: ./shadow_removal/result/UAV-SC/train
+EVAL_SAMPLE_SAVE: ./shadow_removal/result/UAV-SC/eval
+TEST_SAMPLE_SAVE: ./shadow_removal/result/UAV-SC/test
 
 
-MODEL_LOAD: ../checkpoints/FuseDiff_gen_latest.pth
+MODEL_LOAD: FuseDiff_gen_latest.pth
 
 
 DIFF_ENABLE: True

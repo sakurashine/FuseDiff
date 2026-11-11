@@ -1,7 +1,7 @@
 """Offline, model-agnostic overlapping tiling for images and optional masks and ground-truth images.
 
 Example:
- python crop_tiles.py --images ./original --masks ./masks --output ./tiles --tile-size 1024 --overlap 128
+ python crop_tiles.py --images ./original --masks ./masks --output ./tiles --gt ./unshaded --tile-size 1024 --overlap 128
 
 Produces output/images, output/masks (optional), output/ground_truth (optional), and output/manifest.json.
 Requires Pillow and NumPy. Input images should be 8-bit RGB/gray PNG/TIFF/etc.

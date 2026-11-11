@@ -38,7 +38,7 @@ A CUDA-enabled GPU is recommended for inference.
 
 ## Datasets
 
-The datasets used in our experiments are provided below. You can also use your own UAV images for inference.
+The datasets used in our experiments are provided below.
 
 - UAV-SC: [ESC-Net](https://github.com/fzzfRS/ESC_Net)
 - SRGTA: [RMMamba](https://github.com/xgd-cj/RMMamba)

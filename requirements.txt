@@ -1,0 +1,6 @@
+torch>=1.7.1
+torchvision>=0.8.2
+numpy>=1.19.5
+opencv-python>=3.4.17.63
+scikit-image>=0.18.2
+lpips>=0.1.4

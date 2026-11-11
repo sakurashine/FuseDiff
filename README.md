@@ -44,7 +44,7 @@ The datasets used in our experiments are provided below.
 - SRGTA: [RMMamba](https://github.com/xgd-cj/RMMamba)
 - RS-SynShadow: [RS-GSSR](https://fzzfrs.github.io/RS-GSSR/#resources)
 
-The current framework requires corresponding shadow masks as input. Since the UAV-SC dataset does not provide official shadow masks, we release the test masks used in our experiments available in [Google Drive](https://drive.google.com/file/d/1KvzqoG8hsHTMWubPm4QgXKWhVBMz_bYX/view?usp=drive_link).
+The current framework requires corresponding shadow masks as input. Since the UAV-SC dataset does not provide official shadow masks, we release the test masks used in our experiments available in [Google Drive]([https://drive.google.com/file/d/1KvzqoG8hsHTMWubPm4QgXKWhVBMz_bYX/view?usp=drive_link](https://drive.google.com/file/d/1os8pLG30hZvoEcdtni4q6OU75h37mqI0/view?usp=drive_link)).
 
 ## Pretrained Models
 

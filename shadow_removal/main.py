@@ -81,8 +81,8 @@ def load_config(mode=None):
 
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--path', '--checkpoints', type=str, default='./checkpoints', help='model checkpoints path (default: ./checkpoints)')
-    parser.add_argument('--config', type=str, default='config.yml', help='config file name or path (default: config.yml)')
+    parser.add_argument('--path', '--checkpoints', type=str, default='./shadow_removal/checkpoints', help='model checkpoints path (default: ./checkpoints)')
+    parser.add_argument('--config', type=str, default='config_UAV-SC_tiles.yml', help='config file name or path (default: config.yml)')
     parser.add_argument('--override', nargs='*', default=[], help='Override config values, format: key=value')
     args = parser.parse_args()
     if os.path.isabs(args.config):

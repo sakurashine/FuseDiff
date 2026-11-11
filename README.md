@@ -38,11 +38,11 @@ A CUDA-enabled GPU is recommended for inference.
 
 ## Datasets
 
-The experiments are conducted on three UAV shadow removal datasets:
+The datasets used in our experiments are provided below. You can also use your own UAV images for inference.
 
-- **UAV-SC**
-- **SRGTA**
-- **RS-SynShadow**
+- UAV-SC: [ESC-Net](https://github.com/fzzfRS/ESC_Net)
+- SRGTA: [RMMamba](https://github.com/xgd-cj/RMMamba)
+- RS-SynShadow: [RS-GSSR](https://fzzfrs.github.io/RS-GSSR/#resources)
 
 You may also evaluate FuseDiff on your own UAV images. The current framework requires corresponding shadow masks as input.
 

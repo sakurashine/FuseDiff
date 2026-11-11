@@ -20,7 +20,7 @@ FuseDiff consists of three key components:
 
 - **Self-Supervised Inpainting Pretraining:** Learns structural and textural priors from shadow-free images without requiring paired supervision.
 - **Timestep-Aware Dynamic Fusion (TADFuse):** Progressively integrates illumination and texture features under timestep guidance.
-- **Coarse-to-Fine Diffusion (C2FDiff):** Refines coarse restoration results through conditional diffusion sampling to recover fine-grained textures and remove residual shadow artifacts.
+- **Coarse-to-Fine Diffusion (C2FDiff):** Refines coarse restoration results through conditional diffusion sampling.
 
 ![FuseDiff_framework](./FuseDiff_framework.png "FuseDiff_framework")
 

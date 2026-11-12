@@ -27,9 +27,9 @@ def axis_weight(length, left_overlap, right_overlap, eps=0.05):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--manifest', type='FuseDiff-main/shadow_removal/data/UAV-SC/test/tiles/manifest.json', required=True)
-    ap.add_argument('--predictions', type='FuseDiff-main/shadow_removal/result/UAV-SC/test', required=True)
-    ap.add_argument('--output', type='FuseDiff-main/shadow_removal/result/UAV-SC/test/stitched', required=True)
+    ap.add_argument('--manifest', type=Path, default='./shadow_removal/data/UAV-SC/test/tiles/manifest.json')
+    ap.add_argument('--predictions', type=Path, default='./shadow_removal/result/UAV-SC/test')
+    ap.add_argument('--output', type=Path, default='./shadow_removal/result/UAV-SC/test/stitched')
     args = ap.parse_args()
     manifest = json.loads(args.manifest.read_text(encoding='utf-8'))
     args.output.mkdir(parents=True, exist_ok=True)

@@ -54,7 +54,17 @@ Please download the pretrained FuseDiff model and place it in the designated che
 
 ## Inference
 
+### 1. Shadow Removal Inference
+
 To perform shadow removal using the pretrained model, run:
+
+```bash
+python shadow_removal/test.py --config 'config_UAV-SC.yml'
+```
+
+### 2. Inference Efficiency Evaluation
+
+To evaluate the inference efficiency of the model, first crop the test images into tiles and generate the corresponding data list. Then, run inference and stitch the predicted tiles back into full-resolution images:
 
 ```bash
 python tools/crop_tiles.py --images [PATH_OF_SHADOWED_IMAGES] --masks [PATH_OF_MASK] --gt [PATH_OF_SHADOWFREE_IMAGES] --output shadow_removal/data/UAV-SC/test/tiles

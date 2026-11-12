@@ -47,7 +47,6 @@ def main(mode=None):
     model.load()
 
     num_all = sum(p.numel() for p in model.inpaint_model.generator.parameters())
-    print(num_all)
 
     iteration = model.inpaint_model.iteration
     if len(config.GPU) > 1:

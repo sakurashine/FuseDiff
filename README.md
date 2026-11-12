@@ -72,7 +72,7 @@ python tools/crop_tiles.py --images [PATH_OF_SHADOWED_IMAGES] --masks [PATH_OF_M
 
 python shadow_removal/data/data_list.py
 
-python shadow_removal/test.py
+python shadow_removal/test.py --config 'config_UAV-SC_tiles.yml'
 
 python tools/stitch_tiles.py
 ```

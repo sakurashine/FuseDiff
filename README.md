@@ -4,7 +4,8 @@ This is the official implementation of the paper **"Fusion and Diffusion for Tim
 
 ## TODO
 
-- [x] Release inference code.
+- [x] Release shadow removal inference code.
+- [x] Release inference efficiency evaluation code.
 - [x] Release pretrained models.
 - [ ] Release training code.
 

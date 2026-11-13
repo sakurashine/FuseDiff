@@ -7,6 +7,7 @@ This is the official implementation of the paper **"Fusion and Diffusion for Tim
 - [x] Release shadow removal inference code.
 - [x] Release inference efficiency evaluation code.
 - [x] Release pretrained models.
+- [x] Release inference log.
 - [ ] Release training code.
 
 ## Overview

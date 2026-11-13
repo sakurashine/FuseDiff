@@ -18,7 +18,7 @@ class LIFSR():
         self.debug = False
         self.inpaint_model = InpaintingModel(config).to(config.DEVICE)
 
-        self.loss_fn_vgg = lpips.LPIPS(net='vgg').to(config.DEVICE)
+        self.loss_fn_vgg = lpips.LPIPS(net='vgg', verbose=False).to(config.DEVICE)
 
 
         self.psnr = PSNR(255.0).to(config.DEVICE)
@@ -260,8 +260,6 @@ class LIFSR():
                 mae_all = self.metric(images, outputs, masks2, shadow_list, non_list)
                 mae_list.append(mae_all)
 
-                print(f"mae_all:{round(mae_all, 4)}/{round(np.average(mae_list), 4)}  {len(mae_list)}")
-
                 if len(mae_list) % 1 == 0:
                     base_name = self.test_dataset.name.split('.')[0]
                     save_sample_png(sample_folder=self.config.TEST_SAMPLE_SAVE,
@@ -273,9 +271,6 @@ class LIFSR():
             non_np = np.array(non_list)
             shadow_area = np.sum(shadow_np[:, 0]) / np.sum(shadow_np[:, 1])
             non_area = np.sum(non_np[:, 0]) / np.sum(non_np[:, 1])
-            print('iteration: {}  mae: all:{} shadow:{} non:{}'.format(self.inpaint_model.iteration,
-                                                                       round(np.average(mae_list), 4),
-                                                                       round(shadow_area, 4), round(non_area, 4)))
             
             print(f"Total inference time (forward only): {total_inference_time:.2f} seconds")
             print(f"Average inference time: {total_inference_time / len(mae_list) * 1000:.2f} ms/image")

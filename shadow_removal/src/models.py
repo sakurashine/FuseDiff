@@ -88,7 +88,7 @@ class InpaintingModel(BaseModel):
             diffusion = None
 
         self.add_module('l1_loss', nn.L1Loss())
-        self.lpips = lpips.LPIPS(net='vgg').to(config.DEVICE) if getattr(config, 'DIFF_LPIPS_WEIGHT', 0) > 0 else None
+        self.lpips = lpips.LPIPS(net='vgg', verbose=False).to(config.DEVICE) if getattr(config, 'DIFF_LPIPS_WEIGHT', 0) > 0 else None
 
         # optimizers
         self.gen_optimizer = None if self.freeze_coarse else optim.Adam(

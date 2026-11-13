@@ -35,8 +35,6 @@ Install the required dependencies using:
 pip install -r requirements.txt
 ```
 
-A CUDA-enabled GPU is recommended for inference.
-
 ## Datasets
 
 The datasets used in our experiments are provided below.
